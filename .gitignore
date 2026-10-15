@@ -1,0 +1,12 @@
+# Obsidian 运行时数据（含本机绝对路径，不入库）
+data.json
+change-log.md
+
+# 测试临时目录
+.tmp/
+dev/.tmp/
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+*.log
