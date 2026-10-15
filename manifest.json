@@ -4,7 +4,7 @@
   "version": "1.1.3",
   "minAppVersion": "1.4.0",
   "description": "管理 Markdown 中指向仓库外部（磁盘绝对路径）的文件/文件夹链接：监控外部目录、自动修复失效链接、总览并增删改映射关系。",
-  "author": "you",
-  "authorUrl": "",
+  "author": "cutejsf",
+  "authorUrl": "https://github.com/cutejsf",
   "isDesktopOnly": true
 }

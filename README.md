@@ -34,10 +34,26 @@
 
 ## 安装
 
-1. 把 `obsidian-external-link-manager` 整个文件夹复制到 `<你的仓库>/.obsidian/plugins/` 下，并重命名为 `external-link-manager`
-2. Obsidian → 设置 → 第三方插件 → 关闭「安全模式」（如未关闭）→ 刷新 → 启用 **External Link Manager**
+插件是**免编译**的（纯 CommonJS），不需要 `npm install` / `npm run build`。
 
-本插件是免编译的（纯 CommonJS），不需要 `npm install` / `npm run build`。
+### 方式一：从 Releases 下载（推荐）
+
+1. 打开 [最新版本](https://github.com/cutejsf/external-link-manager/releases/latest)，下载 `main.js`、`manifest.json`、`styles.css` 三个文件
+2. 在你的仓库里新建文件夹 `<你的仓库>/.obsidian/plugins/external-link-manager/`，把三个文件放进去
+3. Obsidian → 设置 → 第三方插件 → 关闭「安全模式」（如未关闭）→ 点刷新 → 启用 **External Link Manager**
+
+> Release 里同时附了打包好的 `external-link-manager-<版本>.zip`，解压出来就是上面那个文件夹，整个丢进 `.obsidian/plugins/` 即可。
+
+### 方式二：BRAT（可自动更新）
+
+已装 [BRAT](https://github.com/TfTHacker/obsidian42-brat) 的话：命令面板 → `BRAT: Add a beta plugin for testing` → 填 `cutejsf/external-link-manager` → Add Plugin。之后有新版本会提示更新。
+
+### 方式三：克隆源码
+
+```bash
+cd <你的仓库>/.obsidian/plugins/
+git clone git@github.com:cutejsf/external-link-manager.git external-link-manager
+```
 
 > 仅支持桌面端（需要访问文件系统），`manifest.json` 里已标记 `isDesktopOnly: true`。
 
